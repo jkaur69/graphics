@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl"width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<br>
+  <p class="font" id="numdot">MS: | FPS: </p> 
+  Full Body Animation:
+  <button type="button" id="animationOn">ON</button>
+  <button type="button" id="animationOff">OFF</button> &nbsp;&nbsp;&nbsp;&nbsp
+
+  <button type="button" id="stopPoke">Stop Poke</button>
+  <p>
+
+	Camera Angle (Horizontal) <input type="range", min="-180" max="180" value="5" class="slider" id="angleSlide">&nbsp 
+  Camera Angle (Vertical) <input type= "range" min = "-180" max = "180" value = "-15" class = "slider" id = "angleSlide_v">
+	<p>
+  
+  Head (Left/Right) <input type="range", min="-30" max="10" value="0" class="slider" id="headSlide1">
+  Head (Up/Down) <input type="range", min="-30" max="10" value="0" class="slider" id="headSlide2">
+  <p>
+  
+    
+  Left Arm <input type="range", min="-60" max="90" value="0" class="slider" id="leftArmSlide">
+  &nbsp; Right Arm <input type="range", min="-60" max="90" value="0" class="slider" id="rightArmSlide">
+  <p>
+  
+
+  Notes: <br>
+  This is an average student named Max.<br>
+  Shift the canvas controls to show you how Max got that dawg in him.
+
+
+  <!-- Import External Libraries -->
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix-cse160(2).js"></script>
+	<script src="Cube.js"></script>
+  <script src="Draw.js"></script>
+  <script src="asgn3.js"></script>
+  </body>
+</html>
