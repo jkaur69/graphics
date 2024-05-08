@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minecraft World</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl"width="800" height="800">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<br>
+  <p class="font" id="numdot">MS: | FPS: </p> 
+  GAME: FIND THE BEAR
+  <p>
+  Full Body Animation:
+  <button type="button" id="animationOn">ON</button>
+  <button type="button" id="animationOff">OFF</button> &nbsp;&nbsp;&nbsp;&nbsp;
+
+  <button type="button" id="stopPoke">Stop Poke</button>
+  <p>
+
+	Camera Angle (Horizontal) <input type="range", min="-180" max="180" value="5" class="slider" id="angleSlide">&nbsp 
+  <p>
+  Controls: <p>
+    A - &nbsp;&nbsp;&nbsp;&nbsp; Move Left &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Q - &nbsp;&nbsp;&nbsp;&nbsp; Pan Left <br>
+    D - &nbsp;&nbsp;&nbsp;&nbsp; Move Righ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E - &nbsp;&nbsp;&nbsp;&nbsp; Pan Right <br>
+    W - &nbsp;&nbsp;&nbsp; Move Forward &nbsp;&nbsp;&nbsp;Z - &nbsp;&nbsp;&nbsp;&nbsp; Move Up <br>
+    S - &nbsp;&nbsp;&nbsp;&nbsp; Move &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; X - &nbsp;&nbsp;&nbsp;&nbsp; Move Down <br>
+
+ 
+  <!-- Import External Libraries -->
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix-cse160.js"></script>
+	<script src="Cube.js"></script>
+  <script src="Triangles.js"></script>
+  <script src="Circle.js"></script>
+  <script src="Camera.js"></script>
+  <script src="asgn4.js"></script>
+
+    </body>
+</html>
