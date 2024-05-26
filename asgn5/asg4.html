@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lighting</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl"width="500" height="500">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<br>
+  <p class="font" id="numdot">MS: | FPS: </p> 
+
+  <b>Animation Toggle:</b>
+  <button type="button" id="animationOn">ANIMATION ON</button>
+  <button type="button" id="animationOff">ANIMATION OFF</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <p>
+
+  <b>Normal Toggle:</b>
+  <button type="button" id="normalOn">NORMAL ON</button>
+  <button type="button" id="normalOff">NORMAL OFF</button>
+  <p>
+
+  <b>Light Toggle:</b>
+  <button type="button" id="lightOn">LIGHT ON</button>
+  <button type="button" id="lightOff">LIGHT OFF</button>
+  <p> 
+  
+  <b>Rotatation Toggle</b>
+  <button type="button" id="startRotate">START ROTATE</button>
+  <button type="button" id="stopRotate">STOP ROTATE</button>
+  <p>
+  
+  <b>Light Color:</b>
+  Red <input type="range" min ="0" max ="100" value ="0" class ="slider" id ="lightRed">
+  Green <input type="range" min ="0" max ="100" value ="0" class ="slider" id ="lightGreen">
+  Blue <input type="range" min ="0" max ="100" value ="0" class ="slider" id ="lightBlue">
+  <p>
+  	
+  <b>Light Movement:</b>
+  Light X <input type="range", min="-400" max="400" value="0" class="slider" id="lightSlideX">&nbsp 
+  Light Y <input type="range", min="-150" max="400" value="100" class="slider" id="lightSlideY">&nbsp 
+  Light Z <input type="range", min="-550" max="550" value="-200" class="slider" id="lightSlideZ">&nbsp 
+  <p>
+
+	<b>Camera Angle:</b> <input type="range", min="-180" max="180" value="5" class="slider" id="angleSlide">&nbsp 
+  <p>
+ 
+  <!-- Import External Libraries -->
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix-cse160.js"></script>
+	<script src="Cube.js"></script>
+  <script src="Sphere.js"></script>
+  <script src="Camera.js"></script>
+  <script src="asg4.js"></script>
+
+    </body>
+</html>
